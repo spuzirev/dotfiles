@@ -1,0 +1,7 @@
+export HISTCONTROL="ignoredups:ignorespace:erasedups"
+export HISTFILE="$HOME/.bash_history"
+export HISTFILESIZE="1000000"
+export HISTSIZE="10000"
+export HISTTIMEFORMAT="%F %T: "
+
+export EDITOR="vim"

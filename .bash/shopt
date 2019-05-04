@@ -1,0 +1,66 @@
+opts_enable="\
+    autocd \
+    cdable_vars \
+    cdspell \
+    checkhash \
+    checkwinsize \
+    cmdhist \
+    complete_fullquote \
+    direxpand \
+    dirspell \
+    expand_aliases \
+    extglob \
+    extquote \
+    failglob \
+    force_fignore \
+    globstar \
+    gnu_errfmt \
+    histappend \
+    histreedit \
+    histverify \
+    hostcomplete \
+    huponexit \
+    interactive_comments \
+    lithist \
+    localvar_unset \
+    progcomp \
+    progcomp_alias \
+    promptvars \
+    sourcepath \
+"
+opts_disable="\
+    assoc_expand_once \
+    checkjobs \
+    compat31 \
+    compat32 \
+    compat40 \
+    compat41 \
+    compat42 \
+    compat43 \
+    compat44 \
+    dotglob \
+    extdebug \
+    globasciiranges \
+    inherit_errexit \
+    lastpipe \
+    localvar_inherit \
+    mailwarn \
+    no_empty_cmd_completion \
+    nocaseglob \
+    nocasematch \
+    nullglob \
+    restricted_shell \
+    shift_verbose \
+    xpg_echo \
+"
+
+for opt in $opts_enable ; do
+    shopt -s $opt
+done
+
+for opt in $opts_disable ; do
+    shopt -u $opt
+done
+unset opt
+unset opts_disable
+unset opts_enable

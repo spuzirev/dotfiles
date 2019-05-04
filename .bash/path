@@ -1,0 +1,14 @@
+export PATH="/opt/local/bin:/opt/local/sbin:/opt/bin:/opt/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+
+# Probably we're on MacOS
+if [ -d /usr/local/opt ] ; then
+    export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+    export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
+    export PATH="/usr/local/opt/ed/libexec/gnubin:$PATH"
+    export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+    export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+    export PATH="/usr/local/opt/gawk/libexec/gnubin:$PATH"
+    export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+fi
+
+export PATH="$HOME/bin:$PATH"
